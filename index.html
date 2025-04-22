@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Império da Roça</title>
+    <style>
+        @media (max-width: 768px) {
+            nav ul {
+                max-width: 90%;
+            }
+
+            nav a {
+                font-size: 1.2em;
+                padding: 10px 40px;
+            }
+
+            nav a .icon,
+            nav a .icon2 {
+                width: 20px;
+                height: 20px;
+            }
+
+            .logo-container img {
+                max-width: 250px;
+            }
+
+            .img-lado-esquerdo,
+            .img-lado-direito {
+                display: none;
+                /* esconde as imagens laterais em telas pequenas */
+            }
+
+            .decor-top-left,
+            .decor-bottom-right {
+                width: 80px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav a {
+                font-size: 1em;
+                padding: 10px 30px;
+            }
+            nav a .icon2{
+                right: 45px;
+            }
+            nav a .icon{
+                left: 45px;
+            }
+            .logo-container img {
+                max-width: 200px;
+            }
+
+            .decor-top-left,
+            .decor-bottom-right {
+                display: none;
+                /* remove os elementos decorativos nos menores dispositivos */
+            }
+
+            footer {
+                font-size: 0.9em;
+                padding: 15px;
+            }
+
+            body::before {
+                content: "";
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url('img/castanha.png');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                opacity: 0.04;
+                /* bem suave no fundo */
+                z-index: 0;
+                pointer-events: none;
+            }
+        }
+
+        @media (min-width: 770px) and (max-width:1024px) {
+
+            .img-lado-esquerdo,
+            .img-lado-direito {
+                position: fixed;
+                top: 60%;
+                transform: translateY(-50%);
+                /* width: 500px; */
+                /* ou o tamanho que você quiser */
+                height: auto;
+                z-index: 1;
+                opacity: 0.8;
+            }
+
+            .img-lado-direito {
+                width: 200px;
+            }
+
+            .img-lado-esquerdo {
+                width: 200px;
+            }
+
+            .img-lado-esquerdo {
+                left: 0;
+            }
+
+            .img-lado-direito {
+                right: 10px;
+            }
+
+
+            .decor-top-left {
+                position: absolute;
+                top: 6px;
+                left: 0;
+                width: 120px;
+                opacity: 0.7;
+                /* opcional: deixa a imagem discreta */
+                pointer-events: none;
+                z-index: 0;
+            }
+
+            .decor-bottom-right {
+                position: absolute;
+                bottom: 45px;
+                right: 0;
+                width: 120px;
+                opacity: 0.7;
+                pointer-events: none;
+                z-index: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Logo Império da Roça">
+
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://maps.app.goo.gl/mQEb5MFG1Pj9TzNS7">
+                        <img src="img/tl.webp" alt="" class="icon icon-esquerda">
+                        Onde nos encontrar
+                        <img src="img/tl.png" alt="" class="icon2 icon-direita">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="produtos.html">
+                        <img src="img/tl.webp" alt="" class="icon">
+                        Produtos
+                        <img src="img/tl.png" alt="" class="icon2">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://drive.google.com/file/d/1cqgbmWE66Oxdpg90zAxgGHakQa2dXFrj/view?usp=drive_link">
+                        <img src="img/tl.webp" alt="" class="icon">
+                        Chás e seus benefícios
+                        <img src="img/tl.png" alt="" class="icon2">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tudogostoso.com.br/">
+                        <img src="img/tl.webp" alt="" class="icon">
+                        Receitas
+                        <img src="img/tl.png" alt="" class="icon2">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <img src="img/pontos.png" alt="" class="decor-top-left">
+    <img src="img/pontos.png" alt="" class="decor-bottom-right">
+    <img src="img/tres-r.png" alt="" class="img-lado-esquerdo">
+    <img src="img/castanha.png" alt="" class="img-lado-direito">
+
+    <footer>
+        <p>&copy; 2025 Império da Roça. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
