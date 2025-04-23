@@ -10,3 +10,4 @@ Bem-vindo ao repositório do **Império da Roça**, um site dedicado à divulga�
 
 ## 📁 Estrutura do Projeto
 
+![bio-rapida](https://github.com/user-attachments/assets/8308b85e-4009-4f2c-8dad-41f3399987c8)
